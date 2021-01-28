@@ -16,11 +16,14 @@ namespace ProiectMedii.Models
 
         [Display(Name = "Pet Name")]
         public string PetName { get; set; }
+
+        [Display(Name = "Date & Time")]
         public DateTime ApptTime { get; set; }
 
         public int DoctorID { get; set; }
         public Doctor Doctor { get; set; }
 
+        [Display(Name = "Service")]
         public int CategoryID { get; set; }
         public Category Category { get; set; }
 

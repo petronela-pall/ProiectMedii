@@ -2,10 +2,10 @@
 @model ProiectMedii.Pages.Appointments.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Appointments";
 }
 
-<h1>Index</h1>
+<h1>Appointments</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
@@ -44,10 +44,10 @@
                 @Html.DisplayFor(modelItem => item.ApptTime)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Doctor.ID)
+                @Html.DisplayFor(modelItem => item.Doctor.DoctorName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.ID)
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

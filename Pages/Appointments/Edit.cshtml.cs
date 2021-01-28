@@ -38,8 +38,8 @@ namespace ProiectMedii.Pages.Appointments
             {
                 return NotFound();
             }
-           ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "ID", "ID");
-           ViewData["DoctorID"] = new SelectList(_context.Set<Doctor>(), "ID", "ID");
+           ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "ID", "CategoryName");
+           ViewData["DoctorID"] = new SelectList(_context.Set<Doctor>(), "ID", "DoctorName");
             return Page();
         }
 

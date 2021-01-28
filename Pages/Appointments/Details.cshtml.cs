@@ -36,6 +36,7 @@ namespace ProiectMedii.Pages.Appointments
             {
                 return NotFound();
             }
+            
             return Page();
         }
     }
